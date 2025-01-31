@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Kumbh Sans', sans-serif;
+
+}
+body{
+    background-color: #240243;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.navbar{
+    background: #240243;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+#navbar__logo {
+   font-size: 1.8rem;
+   font-weight: bold;
+   text-decoration: none;
+   color: #fff;
+}
+
+.navbar__menu{
+    display: flex;
+    list-style: none;
+    gap:20px;
+}
+
+.navbar__item{
+    position: relative;
+
+}
+
+.navbar__links{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+
+}
+
+.hero {
+    background: linear-gradient(to right, #f8f7f8, #f4f3f6);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #240243;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #240243;
+}
+
+.hero__cta {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color:#fff;
+    background-color: #00c7fc;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero__cta:hover {
+    background-color: #00a4d2;
+    transform: scale(1.05);
+}
+
