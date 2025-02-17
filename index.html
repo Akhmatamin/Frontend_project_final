@@ -7,55 +7,66 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    <nav class="navbar">
-        <div class="navbar__container"> 
-            <a href="/" id="navbar__logo">KPFL</a>
-            <img src="logo.png" class="image"/>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a onclick="alert('No News yet!')" class="navbar__links">News</a>
-                </li>
-                <li class="navbar__item">
-                    <a onclick="alert('No Results yet!')" class="navbar__links">Results</a>
-                </li>
-                <li class="navbar__item">
-                    <a onclick="alert('No tables yet!')" class="navbar__links">Tables</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="hero">
-        <h1 class="hero__title">Welcome to Kyrgyz Premier Football League website</h1>
-        <p class="hero__subtitle">Your ultimate source for KPFL updates,results and tables</p>
-        <a href="#updates" class="hero__cta">View Updates</a>
-    </section>
-    <section class="fixtures" id="fixtures">
-        <div class="fixture__header">
-            <h2>KPFL Fixtures</h2>
-            <a href="#" class="hero__cta">View All Fixtures</a>
-        </div>
-        <div class="fixture__list">
-            <div class="fixture__item">
+    <div id="check">
+        <h2>Are you interested in Football?</h2>
+        <button onclick="checkAnswer('Yes')">Yes</button>
+        <button onclick="checkAnswer('No')">No</button>
+    </div>
+
+    <div id="content" style="display: none;">
+        <nav class="navbar">
+            <div class="navbar__container"> 
+                <a href="/" id="navbar__logo">KPFL</a>
+                <img src="logo.png" class="image"/>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a id="newsLink" class="navbar__links">News</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a id="resultsLink" class="navbar__links">Results</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a id="tablesLink" class="navbar__links">Tables</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1 class="hero__title">Welcome to Kyrgyz Premier Football League website</h1>
+            <p class="hero__subtitle">Your ultimate source for KPFL updates,results and tables</p>
+            <a href="#updates" class="hero__cta">View Updates</a>
+        </section>
+
+        <section class="fixtures" id="fixtures">
+            <div class="fixture__header">
+                <h2>KPFL Fixtures</h2>
+                <a href="#" class="hero__cta">View All Fixtures</a>
+            </div>
+            <div class="fixture__list">
+                <div class="fixture__item">
                     <p><strong>ABD 4 - 2 DOR</strong></p>
                     <p>Thursday 30 January</p>
+                </div>
+                <div class="fixture__item">
+                    <p><strong>MUN 1 - 2 BCT</strong></p>
+                    <p>Thursday 30 January</p>
+                </div>
+                <div class="fixture__item">
+                    <p><strong>OZG 3 - 1 </strong></p>
+                    <p>Thursday 30 January</p>
+                </div>
+                <div class="fixture__item">
+                    <p><strong>NTG 3 - 2 CHL</strong></p>
+                    <p>Thursday 30 January</p>
+                </div>
             </div>
-            <div class="fixture__item">
-                <p><strong>MUN 1 - 2 BCT</strong></p>
-                <p>Thursday 30 January</p>
-            </div>
-            <div class="fixture__item">
-                <p><strong>OZG 3 - 1 </strong></p>
-                <p>Thursday 30 January</p>
-            </div>
-            <div class="fixture__item">
-                <p><strong>NTG 3 - 2 CHL</strong></p>
-                <p>Thursday 30 January</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
+    <script src="script.js"></script> 
 </body>
 </html>
